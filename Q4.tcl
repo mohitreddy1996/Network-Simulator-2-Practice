@@ -41,6 +41,8 @@ $loss_module drop-target [new Agent/Null]
 $loss_module set rate_ 10
 $loss_module ranvar $loss_rand_var
 
+$ns lossmodel $loss_module $n(2) $n(3)
+
 # data tranfer.
 set tcp [new Agent/TCP]
 $ns attach-agent $tcp $n(0)
